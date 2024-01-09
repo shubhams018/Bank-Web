@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>Credit Card</title>
+<script language="javascript" type="text/javascript">
+function valid()
+	{
+	var regex=/^\w+([-.]?\w+)*@\w+([-.]?\w+)*.\w+([-.]\w+)*$/;
+	var str=document.getElementById("Ename").value;
+	var result=regex.test(str);
+	if(result!==true)
+	{
+	alert("Invalid E-Mail");
+	}
+	}
+</script>
+<style>
+body {
+      background-image: url('bank.jpg');
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  background-size: 100% 100%;
+	  font-size:25;
+	  color: white;
+     }
+img {
+    float:right;
+    width:60px;
+    height:60px;
+    }
+input[type="submit"]
+	{
+	height:35px;
+	width:100px;
+	}
+</style>
+</head>
+<body>
+<hr style="width:50%;text-align:centre;">
+<h1 style="text-align:center;color:red;"><u>Credit Card</u></h1>
+<hr style="width:50%;text-align:centre;">
+<img src="images.jpg">
+<img src="images.jpg"
+     style="float:left;width:60px;height:60px;">
+<br>
+<br>
+<br>
+<br>
+<p>
+A credit card allows you to make purchases with borrowed money, known as credit. As you spend and make purchases on your credit card, you will begin to build 
+up a balance that needs to be repaid at the end of every month. Over time, using your card and paying your bill on time will help build a positive credit history. 
+Having a positive credit history will save you money for future loans and purchases. The more immediate benefits of having a credit card are extra purchasing power 
+and flexibility. Most businesses accept credit cards, and some services, including Uber and car rental agencies, only take payment from a credit card.
+
+<p><b>Note: To get a new credit card bank account is manditory.
+<br>
+<br>To Open Account </b></p>
+<a href="Microproject1.html"><button>Click Here</button></a>
+</p>
+
+<p>Enter the following details to order new credit card.</p>
+
+<form action="mailto:sonararadhya@gmail.com" method="post" enctype="text/plain" style="text-align:center">
+
+  <br>
+ First name: <input type="text" id="fname" name="fname" size="90">
+  <br>
+  <br>
+ Last name: <input type="text" id="lname" name="lname" size="90">
+  <br>
+  <br>
+ Account Number: <input type="number" id="Aname" name="Aname" size="90">
+  <br>
+  <br>
+Branch Name:  <input type="text" id="oname" name="oname" size="90">
+  <br>
+  <br>
+E-Mail: <input type="Text" id="Ename" name="Ename" size="90">
+  <br>
+  <br>
+ Branch Code: <input type="number" id="Bname" name="Bname" size="90">
+  <br>
+  <br>
+  Reason to Order:
+  <br>
+  <br>
+  <textarea name=”ContactComment” rows=”6″ cols=”20″></textarea>
+  <br>
+  <br>
+  <hr>
+  <input type="submit" value="Submit" onclick="valid()">
+  </form>
+  <hr>
+<img src="gif smile.gif"
+     style="float:left;width:150px;height:150px">
+<img src="gif smile.gif"
+     style="float:right;width:150px;height:150px">
+</body>
+</html>

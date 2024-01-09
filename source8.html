@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>Current Account</title>
+<script language="javascript" type="text/javascript">
+function valid()
+	{
+	var regex=/^\w+([-.]?\w+)*@\w+([-.]?\w+)*.\w+([-.]\w+)*$/;
+	var str=document.getElementById("Ename").value;
+	var result=regex.test(str);
+	if(result!==true)
+	{
+	alert("Invalid E-Mail");
+	}
+	}
+</script>
+<style>
+body {
+  background-image: url('bank.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color:white;
+  font-size:20;
+     }
+img {
+    float:right;
+    width:60px;
+    height:60px;
+    }
+input[type="submit"]
+	{
+	height:35px;
+	width:100px;
+	}
+</style>
+</head>
+<body>
+<hr style="width:50%;text-align:centre;">
+
+<h1 style="color:red;text-align:center"><b><u>Current Account</u></b></h1>
+
+<hr style="width:50%;text-align:centre;">
+<img src="images.jpg">
+<img src="images.jpg"
+     style="float:left;width:60px;height:60px;">
+<br>
+<br>
+<br>
+<br>
+<p>
+A current account is a deposit account for traders, business owners, and entrepreneurs, who need to make and receive payments more often than others. 
+These accounts hold more liquid deposits with no limit on the number of transactions per day. Current accounts allow overdraft facility, that is 
+withdrawing more than what is currently available in the account. Also, unlike savings accounts, where you earn some interest, these are zero-interest
+bearing accounts. You need to maintain a minimum balance to be able to operate current accounts. 
+</p>
+<p>
+<b>
+Fill up the following form to open new account
+</b>
+</p>
+<form action="mailto:sonararadhya@gmail.com" method="post" enctype="text/plain" style="text-align:center">
+
+<br>
+First Name: <input type="text" id="fname" name="fname" size="90">
+<br>
+<br>
+Last Name: <input type="text" id="lname name" name="lname" size="90">
+<br>
+<br>
+Place: <input type="text" id="pname" name="pname" size="90">
+<br>
+<br>
+Phone Number: <input type="number" id="mname" name="mname" size="90">
+<br>
+<br>
+E-Mail: <input type="Text" id="Ename" name="Ename" size="90">
+<br>
+<br>
+Pin Code: <input type="number" id="cname" name="cname" size="90">
+<br>
+<br>
+Aadhar Number: <input type="number" id="aname" name="aname" size="90">
+<br>
+<br>
+Address: <input type="text" id="dname" name="dname" size="90">
+<br>
+<br>
+Pan Card Number: <input type="number" id="nname" name="nname" size="90">
+<br>
+<br>
+<input type="submit" value="Submit" onclick="valid()">
+</form>
+<img src="gif smile.gif"
+     style="float:left;width:150px;height:150px">
+<img src="gif smile.gif"
+     style="float:right;width:150px;height:150px">
+</body>
+</html>
